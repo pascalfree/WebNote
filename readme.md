@@ -8,8 +8,8 @@ WebNote is [available on GitHub](https://github.com/pascalfree/WebNote)
 
 # Demo #
 
-[Demo](http://webnote.ihdg.ch/)
-username: demo
+[Demo](http://webnote.ihdg.ch/)  
+username: demo  
 password: webnote
 
 # Installation #
