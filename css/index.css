@@ -1,0 +1,217 @@
+/*
+/  WebNote - see readme.md for details
+/  Copyright (C) 2012 David Glenck - <dev@ihdg.ch>
+/  Published under GNU GPLv3 
+/  - see licences/gpl-3.0.txt or <http://www.gnu.org/licenses/>
+*/
+
+/** Basic **/
+
+html {
+  height: 100%;
+}
+
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #DDD;
+  font-family: sans-serif, sans, Arial;
+  font-size: 10pt;
+}
+
+/*end Basic **/
+
+/** Header **/
+
+#toolbar {
+  height: 25px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  color: white;
+  background-color: black;
+  font-size: 15pt;
+  font-family: sans-serif, sans, Arial;
+
+  box-shadow: 0px 3px 10px black;
+}
+
+#page_title {
+  margin: 5px;
+  font-size: 16pt;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+/*end Header **/
+
+/** Dialogs **/
+#dialog_about, #dialog_delete {
+  display: none;
+}
+
+.delete_dialog .ui-dialog-content {
+  display: none !important;
+}
+
+.delete_dialog .ui-dialog-buttonpane, .delete_dialog .ui-dialog-buttonset {
+  border-width: 0;
+  text-align: center;
+  float: none !important;
+}
+
+.ui-dialog {
+  box-shadow: 3px 3px 10px #444;
+}
+
+/*end Dialogs **/
+
+/** Content **/
+
+#content_frame {
+  margin-top: 15px;
+  width: 100%;
+}
+
+#content_body {
+  margin: 15px;
+  margin-top: 40px;
+  font-family: sans-serif, sans, Arial;
+}
+
+/*end Content **/
+
+/** Note **/
+
+.note {
+  position: relative;
+  width: 200px;
+  padding: 20px;
+  margin: 30px 30px 30px 0;
+  float: left;
+
+  background-color: white;
+  font-size: 16pt;
+  border-width: 0;
+  box-shadow: 2px 2px 10px black;
+}
+
+.note .title {
+  font-weight: bold;
+  margin: 5px 0;
+  min-height: 1.2em;
+  min-width: 80%;
+}
+
+.note .text {
+  min-height: 1.2em;
+  min-width: 80%;
+  font-family: sans-serif, sans, Arial;
+  margin: 0px;
+  padding: 3px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.note .text p {
+  margin: 1px 0;
+}
+
+#note_template {
+  display: none;
+}
+
+/*end Note **/
+
+/** Buttons **/
+
+button {
+  font-size: 10pt !important;
+}
+
+.delete_button {
+  position: absolute !important;
+  top: 7px;
+  right: 7px;
+  display: none;
+}
+
+.save_button {
+  float: right;
+}
+
+#new_note {
+  margin: 30px 30px 30px 0;
+  float: left;
+}
+
+/*end Buttons **/
+
+/** Footer **/
+
+#statusbar {
+  text-align: right;
+
+  height: 15px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  z-index: 20;
+  bottom: 0;
+  left: 0;
+  color: white;
+  background-color: black;
+  font-size: 9pt;
+  font-family: sans-serif, sans, Arial;
+
+  box-shadow: 0px -3px 10px black;
+}
+
+#status_text {
+  margin: 5px;
+}
+
+/*end Footer **/
+
+/** hallo toolbar **/
+div.hallotoolbar {
+    margin-top: 20px;
+    border: 1px solid #babdb6;
+    padding: 2px;
+    background-color: #eeeeec;
+    border-radius: 6px;
+    font-size: 9pt;
+    line-height: 1.1em;
+    width: 260px;
+    z-index: 500;
+}
+
+div.hallotoolbar .dropdown-menu {
+    width: 200px;
+    background-color: #eeeeec;
+    margin-top: -1px;
+    border-left: 1px solid #babdb6;
+    border-bottom: 1px solid #babdb6;
+    border-right: 1px solid #babdb6;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+div.hallotoolbar .dropdown-menu .selected {
+    background-color: #729fcf;
+}
+
+div.hallotoolbar .ui-button-text .ui-button-text {
+  /*fix hallo toolbar size of block plugin*/
+  padding: 0 !important;
+}
+
+/*end hallo toolbar **/

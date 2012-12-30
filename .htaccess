@@ -1,0 +1,5 @@
+AuthName "WebNote"
+AuthType Basic
+AuthUserFile /path/to/webnote/.htpasswd
+
+require valid-user
